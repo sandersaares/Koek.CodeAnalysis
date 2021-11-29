@@ -13,9 +13,7 @@
         <repository type="git" url="https://github.com/sandersaares/Koek.CodeAnalysis.git" />
     </metadata>
     <files>
-        <files>
-            <file src="build\**" target="build" />
-            <file src="content\**" target="content" />
-        </files>
+        <file src="build\**" target="build" />
+        <file src="content\**" target="content" />
     </files>
 </package>
