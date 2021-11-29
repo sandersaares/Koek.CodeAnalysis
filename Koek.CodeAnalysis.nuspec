@@ -11,11 +11,13 @@
         <projectUrl>https://github.com/sandersaares/Koek.CodeAnalysis</projectUrl>
         <license type="expression">MIT</license>
         <repository type="git" url="https://github.com/sandersaares/Koek.CodeAnalysis.git" />
+
+        <dependencies>
+            <dependency id="Roslynator.Formatting.Analyzers" version="3.3.0" />
+        </dependencies>
     </metadata>
     <files>
-        <files>
-            <file src="build\**" target="build" />
-            <file src="content\**" target="content" />
-        </files>
+        <file src="build\**" target="build" />
+        <file src="content\**" target="content" />
     </files>
 </package>

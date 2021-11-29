@@ -1,4 +1,4 @@
-name: Build
+name: Build (main)
 
 on:
   push:
@@ -12,7 +12,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - id: make_version_string
-      uses: sandersaares-actions/make-time-based-version-string@master
+      uses: sandersaares-actions/make-time-based-version-string@main
     - id: make_nuget_version_string
       uses: sandersaares-actions/make-time-based-nuget-version-string@main
       with:
@@ -23,7 +23,7 @@ jobs:
       with:
         path: Koek.CodeAnalysis.nuspec
     - name: Package
-      run: nuget pack Koek.CodeAnalysis.nuspec
+      run: nuget pack Koek.CodeAnalysis.nuspec -NoDefaultExcludes
     - uses: actions/upload-artifact@v2
       with:
         name: nupkg
