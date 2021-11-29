@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata minClientVersion="4.0">
+        <id>Koek.CodeAnalysis</id>
+
+        <!-- Automatically set by release process. -->
+        <version>__VERSION_STRING__</version>
+
+        <authors>sandersaares</authors>
+        <description>Shared set of code analysis and code style settings.</description>
+        <projectUrl>https://github.com/sandersaares/Koek.CodeAnalysis</projectUrl>
+        <license type="expression">MIT</license>
+        <repository type="git" url="https://github.com/sandersaares/Koek.CodeAnalysis.git" />
+    </metadata>
+    <files>
+        <files>
+            <file src="build\**" target="build" />
+            <file src="content\**" target="content" />
+        </files>
+    </files>
+</package>
