@@ -1,4 +1,4 @@
-name: Build
+name: Build (main)
 
 on:
   push:
@@ -23,7 +23,7 @@ jobs:
       with:
         path: Koek.CodeAnalysis.nuspec
     - name: Package
-      run: nuget pack Koek.CodeAnalysis.nuspec
+      run: nuget pack Koek.CodeAnalysis.nuspec -NoDefaultExcludes
     - uses: actions/upload-artifact@v2
       with:
         name: nupkg
