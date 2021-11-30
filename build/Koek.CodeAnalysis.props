@@ -1,5 +1,5 @@
 <Project>
   <ItemGroup>
-    <EditorConfigFiles Include="$(MSBuildThisFileDirectory)..\content\CodeAnalysis\.editorconfig" />
+    <EditorConfigFiles Include="$(MSBuildThisFileDirectory)..\content\.editorconfig" />
   </ItemGroup>
 </Project>

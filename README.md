@@ -16,7 +16,7 @@ Installation:
 
 ```xml
 <PropertyGroup>
-    <CodeAnalysisRuleset>$(PkgKoek_CodeAnalysis)\content\CodeAnalysis\CodeAnalysis.ruleset</CodeAnalysisRuleset>
+    <CodeAnalysisRuleset>$(PkgKoek_CodeAnalysis)\content\CodeAnalysis.ruleset</CodeAnalysisRuleset>
 </PropertyGroup>
 ```
 
