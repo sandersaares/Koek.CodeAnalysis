@@ -12,7 +12,6 @@ Prerequisites:
 Installation:
 
 1. Install NuGet package `Koek.CodeAnalysis`.
-1. Adjust the `PackageReference` and add the `GeneratePathProperty="true"` attribute.
 1. Insert the below snippet into the `.csproj` file.
 
 ```xml
@@ -20,3 +19,5 @@ Installation:
     <CodeAnalysisRuleset>$(PkgKoek_CodeAnalysis)\content\CodeAnalysis\CodeAnalysis.ruleset</CodeAnalysisRuleset>
 </PropertyGroup>
 ```
+
+The last step must be performed manually, as you may wish to customize when the ruleset is applied and/or merge it to another ruleset.
