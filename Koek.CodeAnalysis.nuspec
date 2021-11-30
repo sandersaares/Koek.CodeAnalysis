@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
-    <metadata minClientVersion="4.0">
+    <metadata minClientVersion="5.0">
         <id>Koek.CodeAnalysis</id>
 
         <!-- Automatically set by release process. -->
@@ -8,9 +8,12 @@
 
         <authors>sandersaares</authors>
         <description>Shared set of code analysis and code style settings.</description>
+        <readme>docs\README.md</readme>
         <projectUrl>https://github.com/sandersaares/Koek.CodeAnalysis</projectUrl>
         <license type="expression">MIT</license>
         <repository type="git" url="https://github.com/sandersaares/Koek.CodeAnalysis.git" />
+
+        <developmentDependency>true</developmentDependency>
 
         <dependencies>
             <dependency id="Roslynator.Formatting.Analyzers" version="3.3.0" />
@@ -19,5 +22,10 @@
     <files>
         <file src="build\**" target="build" />
         <file src="content\**" target="content" />
+
+        <file src="README.md" target="docs" />
+
+        <!-- Having a tools folder will automatically add GeneratePathProperty, saving the user some effort. The contents are not used. -->
+        <file src="build\**" target="tools" />
     </files>
 </package>
