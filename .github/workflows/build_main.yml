@@ -11,6 +11,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - uses: nuget/setup-nuget@v1
+      with:
+        nuget-api-key: ${{ secrets.NuGetAPIKey }}
+        nuget-version: 5.11
     - id: make_version_string
       uses: sandersaares-actions/make-time-based-version-string@main
     - id: make_nuget_version_string
