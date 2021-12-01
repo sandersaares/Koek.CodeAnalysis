@@ -21,3 +21,11 @@ Installation:
 ```
 
 The last step must be performed manually, as you may wish to customize when the ruleset is applied and/or merge it to another ruleset.
+
+To actually enable code analysis, you may want to define the following:
+
+```xml
+<EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
+<EnableNETAnalyzers>True</EnableNETAnalyzers>
+<AnalysisLevel>preview</AnalysisLevel>
+```
