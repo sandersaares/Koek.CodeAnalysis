@@ -12,17 +12,15 @@ Prerequisites:
 Installation:
 
 1. Install NuGet package `Koek.CodeAnalysis`.
-1. Insert the below snippet into the `.csproj` file.
+1. Insert the below property into the `.csproj` file.
 
 ```xml
-<PropertyGroup>
-    <CodeAnalysisRuleset>$(PkgKoek_CodeAnalysis)\content\CodeAnalysis.ruleset</CodeAnalysisRuleset>
-</PropertyGroup>
+<CodeAnalysisRuleset>$(PkgKoek_CodeAnalysis)\content\CodeAnalysis.ruleset</CodeAnalysisRuleset>
 ```
 
 The last step must be performed manually, as you may wish to customize when the ruleset is applied and/or merge it to another ruleset.
 
-To actually enable code analysis, you may want to define the following:
+To actually enable code analysis, you may want to define the following properties:
 
 ```xml
 <EnforceCodeStyleInBuild>True</EnforceCodeStyleInBuild>
